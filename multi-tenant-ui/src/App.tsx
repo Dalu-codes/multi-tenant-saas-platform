@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Dashboard } from './components/dashboard';
 
 function App() {
-  const [activeTenant, setActiveTenant] = useState('company-a');
+  const [activeTenant] = useState('company-a');
 
   return (
     <div>
