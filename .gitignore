@@ -1,0 +1,17 @@
+# IDE & Core Settings
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Java Build Artifacts
+**/target/
+**/.m2/
+
+# Frontend Dependency & Compilation Bloat
+**/node_modules/
+**/dist/
+
+# Secret System Variables
+.env
+.env.local
