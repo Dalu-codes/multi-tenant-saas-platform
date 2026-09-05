@@ -9,6 +9,7 @@ import java.util.List;
 @RequestMapping("/api/products")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 
+
 public class ProductController {
 
     private final ProductService productService;
@@ -26,4 +27,9 @@ public class ProductController {
     public Product createProduct(@PathVariable String tenantId, @RequestBody Product product) {
         return productService.saveProduct(tenantId, product);
     }
+    @GetMapping("/health")
+    public String healthCheck() {
+        return "UP";
+    }
+
 }
