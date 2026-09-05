@@ -2,7 +2,7 @@ import axios from 'axios';
 import { type Product } from '../types';
 
 // Set up the default URL point where our Spring Boot app runs
-const API_BASE_URL = 'http://localhost:8082/api/products';
+const API_BASE_URL = 'https://multi-tenant-saas-platform-fxtc.onrender.com';
 
 export const fetchProductsByTenant = async (tenantId: string): Promise<Product[]> => {
   const response = await axios.get<Product[]>(`${API_BASE_URL}/${tenantId}`);
