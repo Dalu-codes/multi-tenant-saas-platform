@@ -18,6 +18,11 @@ public class ProductController {
         this.productService = productService;
     }
 
+     @GetMapping({"/health", "/health/"})
+    public String healthCheck() {
+        return "UP";
+    }
+
     @GetMapping("/{tenantId}")
     public List<Product> getProductsByTenant(@PathVariable String tenantId) {
         return productService.getProductsByTenant(tenantId);
@@ -26,10 +31,6 @@ public class ProductController {
     @PostMapping("/{tenantId}")
     public Product createProduct(@PathVariable String tenantId, @RequestBody Product product) {
         return productService.saveProduct(tenantId, product);
-    }
-    @GetMapping("/health")
-    public String healthCheck() {
-        return "UP";
     }
 
 }
