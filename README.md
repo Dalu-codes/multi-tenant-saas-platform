@@ -1,9 +1,5 @@
 # Enterprise Multi-Tenant SaaS Platform (Shared Schema Model)
 
-[![Frontend Framework](https://shields.io)](https://react.dev)
-[![Backend Engine](https://shields.io)](https://spring.io)
-[![Database](https://shields.io)](https://neon.tech)
-[![Containerization](https://shields.io)](https://docker.com)
 
 A production-live, fully containerized Multi-Tenant Software-as-a-Service (SaaS) platform engineered to enforce zero-trust logical data isolation. The system implements a high-efficiency **Single-Database, Shared-Schema (Discriminator Column)** architectural model. This topology allows a single backend instance and a unified database cluster to serve multiple independent client organizations (tenants) simultaneously, drastically reducing cloud compute overhead and database licensing costs for enterprise B2B scaling.
 
